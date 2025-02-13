@@ -5,6 +5,6 @@ defaultContentLanguage = 'zh-CN'
 [languages.zh-CN]
 languageName = '简体中文'
 weight = 1
-title = 'My New Hugo Site'
+title = 'ZMZBlog'
 theme = 'hugo-theme-reimu'
 
