@@ -480,9 +480,9 @@ player:
     options:
       audio: []
       fixed: true
-      autoplay:
+      autoplay: true
       loop:
-      order:
+      order: random
       preload:
       volume:
       mutex:
@@ -493,7 +493,7 @@ player:
     enable: true
     meting_api: # custom api
     options:
-      id: 2265921590
+      id: 13320438800
       server: netease
       type: playlist
       auto:
