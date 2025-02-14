@@ -10,7 +10,7 @@ menu:
     icon: # default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
   - name: archives
     url: "archives"
-    icon:
+    icon: 
   - name: about
     url: "about"
     icon:
@@ -129,7 +129,7 @@ icon_font: 4552607_bq08450reo
 font:
   article:
     - Mulish
-    - Noto Serif SC
+    - Noto Sans TC # Noto Serif SC
   code:
     # - Ubuntu Mono
     # - Source Code Pro
