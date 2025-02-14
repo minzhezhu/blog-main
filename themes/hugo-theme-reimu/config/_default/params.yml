@@ -26,9 +26,9 @@ monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: D-Sketon
-description: "少女祈祷中..."
-subtitle: "少女祈祷中..."
+author: BAGZMZ
+description: "世界线变动中..."
+subtitle: "世界线变动中..."
 
 banner: "images/banner.webp"
 # You can also write it in the form of the following url
@@ -63,7 +63,7 @@ open_graph:
 excerpt_link: Read More
 
 footer:
-  since: 2020 # 2020-current year
+  since: 2024 # 2025-current year
   powered: true
   count: true
   busuanzi: true
@@ -73,7 +73,7 @@ footer:
     mask: true # whether to use the images as a mask
 
 # Sidebar
-sidebar: right
+sidebar: left
 
 social:
   # email: mailto:xxx@gmail.com
@@ -89,7 +89,7 @@ social:
   # flickr: https://www.flickr.com/photos/yourname
   # dribbble: https://dribbble.com/yourname
   # behance: https://www.behance.net/yourname
-  # bilibili: https://space.bilibili.com/yourname
+  bilibili: https://space.bilibili.com/334691380
   # weibo: https://weibo.com/yourname
   # zhihu: https://www.zhihu.com/people/yourname
   # reddit: https://www.reddit.com/user/yourname
