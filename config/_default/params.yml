@@ -480,8 +480,8 @@ player:
     options:
       audio: []
       fixed: true
-      autoplay: true
       loop:
+      autoplay: true
       order: random
       preload:
       volume:
@@ -496,3 +496,4 @@ player:
       id: 13320438800
       server: netease
       type: playlist
+      autoplay: true
