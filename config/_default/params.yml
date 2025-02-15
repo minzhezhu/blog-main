@@ -129,7 +129,7 @@ icon_font: 4552607_bq08450reo
 font:
   article:
     - Mulish
-    - Noto Sans TC # Noto Serif SC
+    - Noto Sans SC
   code:
     # - Ubuntu Mono
     # - Source Code Pro
