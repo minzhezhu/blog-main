@@ -1,4 +1,4 @@
-baseURL = 'https://minzhezhu.github.io/blog'
+baseURL = 'https://minzhezhu.github.io/blog-main/'
 title = 'ZMZBlog'
 theme = 'hugo-theme-reimu'
 languageCode = 'zh-CN'
