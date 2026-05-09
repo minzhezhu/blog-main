@@ -129,19 +129,18 @@ icon_font: 4552607_bq08450reo
 # https://fonts.google.com/
 # Google Fonts, higher priority than local_font
 font:
-  enable: false
+  enable: true
   article:
-   #- Mulish
-   #- Noto Serif SC
+   - Mulish
+   - Noto Serif SC
   code:
-    # - Ubuntu Mono
-    # - Source Code Pro
-    # - JetBrains Mono
+     - Ubuntu Mono
+     - Source Code Pro
+     - JetBrains Mono
 
 # Local FallBack Font
 local_font:
   article:
-    -"MaShan"
     - "-apple-system"
     - PingFang SC
     - Microsoft YaHei

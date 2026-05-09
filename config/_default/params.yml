@@ -125,6 +125,8 @@ reimu_cursor:
 
 icon_font: 4552607_bq08450reo
 
+
+
 # https://fonts.google.com/
 # Google Fonts, higher priority than local_font
 font:
@@ -132,22 +134,25 @@ font:
     - Mulish
     - Noto Sans SC
   code:
-    # - Ubuntu Mono
-    # - Source Code Pro
-    # - JetBrains Mono
+    - Ubuntu Mono
+    - Source Code Pro
+    - JetBrains Mono
 
-# Local FallBack Font
-local_font:
-  article:
-    - "-apple-system"
-    - PingFang SC
-    - Microsoft YaHei
-    - sans-serif
-  code:
-    - Menlo
-    - Monaco
-    - Consolas
-    - monospace
+  #Local FallBack Font
+  local_font:
+    article:
+      - "-apple-system"
+      - PingFang SC
+      - Microsoft YaHei
+      - sans-serif
+    code:
+      - Menlo
+      - Monaco
+      - Consolas
+      - monospace
+
+  
+
 
 dark_mode:
   enable: false # set to true to make your website default to dark mode
