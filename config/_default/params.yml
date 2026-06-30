@@ -142,14 +142,14 @@ font:
   local_font:
     article:
       - "-apple-system"
-      - PingFang SC
-      - Microsoft YaHei
-      - sans-serif
+      - "PingFang SC"
+      - "Microsoft YaHei"
+      - "sans-serif"
     code:
-      - Menlo
-      - Monaco
-      - Consolas
-      - monospace
+      - "Menlo"
+      - "Monaco"
+      - "Consolas"
+      - "monospace"
 
   
 
