@@ -1,0 +1,29 @@
+<script>
+  window.goatcounter = {
+    no_onload: true
+  };
+
+  function countGoatCounterPage() {
+    if (
+      window.goatcounter &&
+      typeof window.goatcounter.count === "function"
+    ) {
+      window.goatcounter.count({
+        path: window.location.pathname + window.location.search,
+        title: document.title
+      });
+    }
+  }
+
+  window.addEventListener(
+    "pjax:complete",
+    countGoatCounterPage
+  );
+</script>
+
+<script
+  data-goatcounter="https://minzhezhu.goatcounter.com/count"
+  async
+  src="https://gc.zgo.at/count.js"
+  onload="countGoatCounterPage()"
+></script>
