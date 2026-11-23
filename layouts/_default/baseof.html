@@ -21,7 +21,7 @@
           <div id="aplayer" theme="var(--color-link)" data-aos="{{ .Site.Params.animation.options.home.sidebar }}"></div>
         {{ end }}
         {{ if and .Site.Params.player.meting.enable .Site.Params.player.aplayer.options.fixed }}
-          <meting-js
+          <blog-playlist
             theme="var(--color-link)"
             {{ if ne .Site.Params.player.meting.options.id nil }}id="{{.Site.Params.player.meting.options.id}}"{{ end }}
             {{ if ne .Site.Params.player.meting.options.server nil }}server="{{ .Site.Params.player.meting.options.server }}"{{ end }}
@@ -36,7 +36,7 @@
             {{ if ne .Site.Params.player.aplayer.options.mutex nil }}mutex="{{ .Site.Params.player.aplayer.options.mutex }}"{{ end }}
             {{ if ne .Site.Params.player.aplayer.options.listFolded nil }}list-folded="{{ .Site.Params.player.aplayer.options.listFolded }}"{{ end }}
             >
-          </meting-js>
+          </blog-playlist>
         {{ end }}
         {{ partial "footer.html" . }}
         {{ if .Site.Params.top.enable }}

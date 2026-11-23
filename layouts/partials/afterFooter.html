@@ -424,4 +424,36 @@
     </script>
   {{ end }}
   {{ partial "helpers/js.html" (dict "src" (index (partial "helpers/vendorCdn.html" (dict "item" $js.meting "ctx" $site)) 0) "integrity" (index (partial "helpers/vendorCdnIntegrity.html" (dict "item" $js.meting)) 0)) }}
+  <script>
+    if (window.MetingJSElement && !customElements.get("blog-playlist")) {
+      customElements.define("blog-playlist", class extends window.MetingJSElement {
+        // Meting 2 passes the live playlist here before APlayer selects its first track.
+        _loadPlayer(tracks) {
+          const playlist = tracks.map((track) => {
+            const source = new URL(track.url, document.baseURI);
+            if (source.searchParams.get("server") !== "netease" ||
+                source.searchParams.get("id") !== "22722861") {
+              return track;
+            }
+
+            // Use the full Event Horizon recording of Believe Me and its album art.
+            const mediaUrl = (type, id) => {
+              const url = new URL(source);
+              url.searchParams.set("type", type);
+              url.searchParams.set("id", id);
+              return url.href;
+            };
+            return {
+              name: "Believe Me",
+              artist: track.artist,
+              url: mediaUrl("url", "4919981"),
+              cover: mediaUrl("pic", "6006632022768749"),
+              lrc: mediaUrl("lrc", "4919981"),
+            };
+          });
+          super._loadPlayer(playlist);
+        }
+      });
+    }
+  </script>
 {{ end }}
