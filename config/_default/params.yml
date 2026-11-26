@@ -104,8 +104,6 @@ social:
 widgets:
   - category
   - tag
-  - tagcloud
-  - recent_posts
 
 # Widget behavior
 recent_posts_limits: 5
