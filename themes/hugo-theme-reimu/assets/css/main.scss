@@ -160,13 +160,67 @@ body {
 }
 
 #content {
+  --content-width: 1350px;
   position: relative;
   display: flex;
   padding-top: 5px;
   align-items: stretch;
-  max-width: 1350px;
+  max-width: var(--content-width);
   margin: 0 auto;
   overflow: visible;
+}
+
+.home-scenery {
+  display: none;
+}
+
+@media #{$mq-large} {
+  #wrap:has(.home-scenery) #header img {
+    object-position: center top;
+  }
+
+  #content:has(.home-scenery) {
+    max-width: none;
+    padding-inline: calc((100% - var(--content-width)) / 2);
+    isolation: isolate;
+  }
+
+  .home-scenery {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none;
+    opacity: 0.64;
+    mask-image: linear-gradient(to bottom, transparent, black 180px, black calc(100% - 100px), transparent);
+
+    &::before, &::after {
+      content: "";
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      max-height: 100%;
+      background: url("{{ $params.banner | relURL }}") no-repeat center / cover;
+    }
+
+    &::before {
+      width: 45%;
+      background-position-x: 52%;
+      mask-image: linear-gradient(to right, black 58%, transparent);
+    }
+
+    &::after {
+      width: 32%;
+      background-position-x: right;
+      mask-image: linear-gradient(to left, black 45%, transparent);
+    }
+  }
+
+  [data-theme="dark"] .home-scenery {
+    opacity: 0.32;
+  }
 }
 
 .sidebar-left,

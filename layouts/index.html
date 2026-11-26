@@ -1,4 +1,5 @@
 {{ define "main" }}
+  <div class="home-scenery" aria-hidden="true"></div>
   {{ $ctx := . }}
   {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
   {{ if and (eq 1 $paginator.PageNumber) ($ctx.Site.Params.home_categories.enable) }}
